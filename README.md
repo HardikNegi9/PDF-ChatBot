@@ -41,12 +41,36 @@ pip install -r requirements.txt
 ---
 
 ## 🎯 **Usage**  
-1️⃣ Start the Neo4j database.  
-2️⃣ Run the chatbot script:  
-```bash
-python main.py
-```
-3️⃣ Upload a **PDF** and start asking questions!  
+This project includes **three different implementations**, each requiring different API keys and configurations. Choose the appropriate setup based on your use case.  
+
+### 1️⃣ **Choose the Implementation**  
+Each version of the chatbot requires different API keys and configurations:  
+
+#### 🔹 **Version 1: LangChain + Google Gemini API**  
+- Requires **[Google Gemini API key](https://ai.google.dev/gemini-api/docs/api-key)**  
+- Uses **LangChain** for retrieval-augmented responses  
+- Run the chatbot using:  
+  ```bash
+  python RAG_Implementation_With_Gemini_and_FASSI.py
+  ```  
+
+#### 🔹 **Version 2: LangChain + Neo4j Knowledge Graph** *(Jupyter Notebook)*  
+- Requires **[Neo4j AuraDB](https://neo4j.com/product/auradb/?ref=neo4j-home-hero)** for knowledge graph storage  
+- Uses **LangChain** for enhanced retrieval  
+- Open the **Jupyter Notebook** and execute the cells step by step.  
+
+#### 🔹 **Version 3: Phi Data Framework + Agentic AI Workflow**  
+- Requires **[Phi Data API key](https://docs.phidata.com/introduction)**  
+- Uses **Agentic AI Workflow** for dynamic query processing  
+- Run the chatbot using:  
+  ```bash
+  python Agentic_RAG_with_Phidata.py
+  ```  
+
+### 2️⃣ **Upload a PDF & Start Asking Questions**  
+- Each version supports **PDF-based Q&A**  
+- Ask complex questions, and the chatbot retrieves answers using **RAG with Knowledge Graphs**  
+
 
 ---
 
